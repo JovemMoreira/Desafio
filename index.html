@@ -72,7 +72,47 @@
         <section>
             <h2>Inscrição</h2>
 
-            for
+            <form action="">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="nome_usuario" required minlength="3">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email_usuario" required>
+
+                <label for="tel">Telefone</label>
+                <input type="tel" id="tel" name="tel_usuario" pattern="^(?:\(?([1-9]{2})\)?\s?)?(?:9[0-9]{4}|[2-8][0-9]{3})\-?[0-9]{4}$">
+
+                <label for="age">Idade</label>
+                <input type="number" id="age" name="idade_usuario" minlength="16" maxlength="100">
+
+                <label for="dateofbirth">Data de Nascimento</label>
+                <input type="date" id="dateofbirth" name="dNascimento_usuario">
+
+                <select name="lExp" id="exp">
+                    <option value="1">Iniciante</option>
+                    <option value="2">Intermediário</option>
+                    <option value="3">Avançado</option>
+                    <option value="4">Especialista</option>
+                </select>
+
+
+                <fieldset>
+                    <legend>Área de interesse</legend>
+
+                    <input type="checkbox" name="pirata" id="pirate">
+                    <input type="checkbox" name="arrombador" id="brute">
+                    <input type="checkbox" name="vilao" id="villain">
+                </fieldset>
+
+                <fieldset>
+                    <input type="radio" name="pay">
+                    <input type="radio" name="pay">
+                </fieldset>
+
+                <textarea name="comentario" id="coment" maxlength="500">Comentários:</textarea>
+
+                <button type="submit">Inscrever</button>
+            </form>
         </section>
     </main>
 

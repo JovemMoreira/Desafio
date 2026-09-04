@@ -109,10 +109,21 @@
                 </fieldset>
 
                 <fieldset>
-                    <input type="radio" name="pay" value="1">
-                    <input type="radio" name="pay2" value="0">
+                    <label for="r1">Pix</label>
+                    <input type="radio" id="r1" name="pay" value="pix">
+                    <label for="r2">Débito</label>
+                    <input type="radio" id="r2" name="pay" value="debito">
                 </fieldset>
 
+                <label for="cupom">Cupom:</label>
+                <input list="cupons" id="cupom" name="cupom">
+                <datalist id="cupons">
+                    <option value="REIDONETWORKING">REIDONETWORKING</option>
+                    <option value="THECOACHMASTER">THECOACHMASTER</option>
+                    <option value="OQUEMPODERAMEDEFENDER">OQUEMPODERAMEDEFENDER</option>
+                </datalist>
+
+                <label for="coment">Comentário:</label>
                 <textarea name="comentario" id="coment" maxlength="500"></textarea>
                 
 
